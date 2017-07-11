@@ -1,0 +1,25 @@
+- name: Install mysql
+  apt: pkg={{ item }} state=installed
+  become: true
+  with_items:    
+   - mysql-client
+   - mysql-common
+   - mysql-server
+   - python-mysqldb
+
+- name: update mysql root password for all root accounts from local servers
+  mysql_user: name=root
+              host="{{item}}"
+              password="root"
+              priv=*.*:ALL,GRANT
+              login_user=root
+              login_password="root"
+              state=present
+  with_items:
+   - localhost
+   - 127.0.0.1
+   - ::1
+
+- name :  ensure mysql started
+  become: yes
+  service: name=mysql state=started enabled=yes  
