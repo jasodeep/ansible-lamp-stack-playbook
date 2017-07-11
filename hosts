@@ -1,0 +1,6 @@
+[lamp-servers]
+	HOST_IP ansible_ssh_private_key_file=PRIVATE_KEY_FILE_PATH ansible_ssh_user=HOST_SSH_USER
+	HOST_IP ansible_ssh_private_key_file=PRIVATE_KEY_FILE_PATH ansible_ssh_user=HOST_SSH_USER
+	HOST_IP ansible_ssh_private_key_file=PRIVATE_KEY_FILE_PATH ansible_ssh_user=HOST_SSH_USER
+	HOST_IP ansible_ssh_private_key_file=PRIVATE_KEY_FILE_PATH ansible_ssh_user=HOST_SSH_USER
+	HOST_IP ansible_ssh_private_key_file=PRIVATE_KEY_FILE_PATH ansible_ssh_user=HOST_SSH_USER
