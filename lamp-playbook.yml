@@ -11,3 +11,4 @@
   roles:
     - apache2
     - mysql
+    - php-fpm
