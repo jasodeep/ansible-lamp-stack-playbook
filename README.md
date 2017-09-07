@@ -16,7 +16,7 @@ You must have Ansible 2.3 installed.
 
 ### Database Configuration
 * USERNAME: root
-* PASSWORD: root (update password in roles/mysql/tasks/main.yml)
+* PASSWORD: [update the variable "mysql_root_password" in lamp-playbook.yml]
 
 
 
