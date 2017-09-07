@@ -12,3 +12,5 @@
     - apache2
     - mysql
     - php-fpm
+  vars:
+    mysql_root_password: "mypass"
